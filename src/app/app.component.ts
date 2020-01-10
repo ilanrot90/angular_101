@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'App';
+  showRecipe = true;
+  onToggleView = ({linkTo}) =>
+    this.showRecipe = linkTo === 'recipeList'
 }
