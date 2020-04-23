@@ -6,7 +6,7 @@ import {Component, EventEmitter, Output} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  showRecipe = true;
-  onToggleView = ({linkTo}) =>
-    this.showRecipe = linkTo === 'recipeList'
+  // showRecipe = true;
+  // onToggleView = ({linkTo}) =>
+  //   this.showRecipe = linkTo === 'recipeList'
 }
